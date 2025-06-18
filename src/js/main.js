@@ -1,16 +1,25 @@
-let peso
-let altura
-let imc
+const peso = document.getElementById("peso")
+const altura = document.getElementById("altura")
+const boton = document.getElementById("boton")
+const resultado = document.getElementById("resultado")
 
-peso = prompt("ingresa tu peso actual")
-altura = prompt("ingresa tu altura actual")
+boton.addEventListener('click', function () {
 
-imc = peso / (altura*altura)
+    const imc = peso.value / (altura.value * altura.value)
 
-console.info("tu imc es "+imc)
+    let message
 
-// crear una tabla de clasificacion
+    // crear una tabla de clasificacion
 
-if (imc>19){
-    console.info("eres una ramita")
-}
+    if (imc > 18.5) {
+        message = 'eres una ramita';
+    } else if (imc < 24.9) {
+        message = 'eres normal';
+    } else if (imc < 29.9) {
+        message = 'eres rellenito';
+    } else {
+        message = 'mera papa'
+    }
+
+    resultado.textContent = "tu tienes un imc de " + Math.round(imc) + " por lo tanto esta en: " + message
+})
