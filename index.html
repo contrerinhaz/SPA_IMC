@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="aca pones una descripcion del sitio">
+    <meta name="keywords" content="IMC, Calculadora">
+    <meta name="sitedomain" content="https://github.com/contrerinhaz/SPA_IMC.git">
+    <meta name="organization" content="contrerinhaz">
+    <meta name="author" content="Juan David Contreras Coronado">
+    <meta name="designer" content="Juan David Contreras Coronado">
+    <meta name="copyright" content="© 2025 contrerinhaz. All rights reserved">
+    <meta name="robots" content="index,follow">
+    <meta name="googlebot" content="index,follow">
+    <meta name="revisit-after" content="15days">
+    <meta name="theme-color" content="#ffffff">
+    <link rel="stylesheet" href="./src/css/styles.css">
+    <title> Calculadora</title>
+</head>
+
+<body>
+    <header>
+        <h1>Calculadora Del IMC</h1>
+    </header>
+    <main>
+        <label for="peso">Peso en KG:</label>
+        <input type="number" id="peso" placeholder="Ejemplo: 50">
+
+        <label for="altura">Altura en Metros:</label>
+        <input type="number" step="0.01" id="altura" placeholder="Ejemplo: 1.85">
+
+        <button id="boton">Calcular</button>
+
+        <section id="resultado" class="resultado"></section>
+    </main>
+    <footer>
+        <P>:P</P>
+    </footer>
+    <script src="./src/js/main.js"></script>
+</body>
+
+</html>
